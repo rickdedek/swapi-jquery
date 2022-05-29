@@ -11,7 +11,18 @@
     ></script>
   </head>
   <body>
-    <button class="btn-get-people">Get People</button>
+    <label for="input-number">Search Person</label>
+    <input
+      type="text"
+      id="input-number"
+      required
+      minlength="1"
+      maxlength="2"
+      size="2"
+    />
+    <!-- siempre colocar eventos onClick, hover, etc en el html -->
+    <button class="btn-get-people" onClick="getPeople()">Get People</button>
+    <span id="person-name">EL RESULTADO VA ACA</span>
   </body>
   <script src="swapi-service.js"></script>
 </html>
